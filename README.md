@@ -16,7 +16,7 @@ Per installare questa web app, seguire i seguenti passaggi:
 1. Clonare questa repository sul proprio computer.
 2. Creare un database MySQL per la web app.
 3. Importare il file `database.sql` nella directory `database` nel database MySQL creato al passaggio 2.
-4. Modificare il file `config.php` nella directory `includes` con le proprie credenziali MySQL.
+4. Modificare il file `database-connection.php` nella directory `includes` con le proprie credenziali MySQL.
 5. Avviare un server PHP locale sulla directory principale della web app.
 6. Accedere alla web app dal proprio browser all'indirizzo `http://localhost:8000`.
 
