@@ -22,4 +22,4 @@ Per installare questa web app, seguire i seguenti passaggi:
 
 ## Licenza
 
-Questa web app è rilasciata sotto licenza GNU. Per ulteriori informazioni, consultare il file `LICENSE`.
+Questa web app è rilasciata sotto licenza GPL-3.0 license. Per ulteriori informazioni, consultare il file `LICENSE`.
