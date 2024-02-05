@@ -6,21 +6,21 @@ if(!empty($_POST['username'])){
 }else{
     //TODO: meglio fare questi controlli con js
     echo "Inserisci lo username";
-    exit;
+    exit();
 }
 if(!empty($_POST['email'])){
     $email = $_POST['email'];
 }else{
     //TODO: meglio fare questi controlli con js
     echo "Inserisci email";
-    exit;
+    exit();
 }
 if(!empty($_POST['password'])){
     $password = $_POST['password'];
 }else{
     //TODO: meglio fare questi controlli con js
     echo "Inserisci password";
-    exit;
+    exit();
 }
 
 $password = md5($password);

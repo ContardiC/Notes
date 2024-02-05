@@ -26,6 +26,16 @@ CREATE TABLE categories
     PRIMARY KEY (id),
 );
 
+
+
+
+
+
+
+
+
+
+
 CREATE TABLE folders
 (
     id      INT AUTO_INCREMENT,

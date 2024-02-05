@@ -1,16 +1,18 @@
 <?php
+
 $HOST = "127.0.0.1";
-$USER = "root";
-$PASS = "";
+$DB_USER = "root";
+$DB_PASS = "";
 $DB_NAME = "note";
-$PORT = 3306;
+$DB_PORT = 3306;
 
-$dbc = new mysqli($HOST,$USER,$PASS,$DB_NAME,$PORT);
+$conn = new mysqli($HOST,$DB_USER,$DB_PASS,$DB_NAME,$DB_PORT);
 
-if($dbc->connect_error){
-    echo $dbc->connect_error;
+if($conn->error){
+    echo $conn->error;
 }else{
-    //echo "ok";
+    // echo "ok";
 }
 
 
+?>
