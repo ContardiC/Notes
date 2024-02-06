@@ -6,24 +6,24 @@ if(!empty($_POST['email'])){
 }else{
     //TODO: meglio fare questi controlli con js
     echo "Inserisci email";
-    exit;
+    exit();
 }
 if(!empty($_POST['password'])){
     $password = $_POST['password'];
 }else{
     //TODO: meglio fare questi controlli con js
     echo "Inserisci password";
-    exit;
+    exit();
 }
 
 $password = md5($password);
 
 $sql = "SELECT * FROM users WHERE email LIKE '$email' AND password LIKE '$password'";
-$res = $dbc->query($sql);
+$res = $conn->query($sql);
 if($res->num_rows>0){
     $row = $res->fetch_assoc();
     $_SESSION['id'] = $row['id'];
-    echo $_SESSION['id'];
+    header("location: ../public/note.php");
 }else{
     echo "Credenziali errate";
     // TODO: gestire caso in cui email non presente quindi utente non presente

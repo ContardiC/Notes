@@ -6,7 +6,12 @@ CREATE TABLE users
     password VARCHAR(256) NOT NULL,
     PRIMARY KEY (id)
 );
-
+CREATE TABLE categories
+(
+    id      INT AUTO_INCREMENT,
+    name    VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id),
+);
 CREATE TABLE notes
 (
     id         INT AUTO_INCREMENT,
@@ -19,12 +24,7 @@ CREATE TABLE notes
     FOREIGN KEY (user_id) REFERENCES users (id),
     FOREIGN KEY (category_id) REFERENCES categories(id)
 );
-CREATE TABLE categories
-(
-    id      INT AUTO_INCREMENT,
-    name    VARCHAR(255) NOT NULL,
-    PRIMARY KEY (id),
-);
+
 
 
 

@@ -24,12 +24,12 @@ if(!empty($_POST['password'])){
 }
 
 $password = md5($password);
-
+// TODO : email gia' esiste
 $sql = "INSERT INTO users(username, email, password) 
 VALUES('$username','$email','$password')";
-if($dbc->query($sql) === TRUE){
+if($conn->query($sql) === TRUE){
     echo "Utente inserito con successo";
 }else{
-    echo $dbc->error;
+    echo $conn->error;
 }
 
